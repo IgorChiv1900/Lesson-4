@@ -10,14 +10,14 @@
 
 public static void main(String[] args) {
 
-        int[][] validArray = new int[][]{{1, 2, 3, 4},{5, 6, 7, 8},{9, 10, 11, 12}, {13, 14, 15, 16}};
+        String[][] validArray = new String[][]{{"1", "2", "3", "4"},{"5", "6", "7", "8"},{"9", "10", "11", "12"}, {"13", "14", "15", "16"}};
 
-        int invalidSizeArray = new int[][]{{1, 2, 3},{4, 5, 6}};
+        String[][] invalidSizeArray = new String[][]{{1, 2, 3},{4, 5, 6}};
 
-        int[][] invalidDataArray = new int[][]{{1, 2, Integer.parseInt("three"), 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
+        String[][] invalidDataArray = new  String[][]{{1, 2, Integer."three", 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
 
         // Проверка корректного массива
-        try {gg''
+        try {
             int sum = ArraySumCalculator.calculateSum(validArray);
             System.out.println("Сумма элементов массива: " + sum);
         } catch (MyArraySizeException | MyArrayDataException e) {
