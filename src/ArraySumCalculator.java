@@ -1,6 +1,7 @@
 public class ArraySumCalculator {
 
-    public static int calculateSum(String[][] array) throws MyArraySizeException, MyArrayDataException {
+    public static int calculateSum(String[][] array)
+            throws MyArraySizeException, MyArrayDataException {
         // Проверка размера массива
         if (array.length != 4 || array[0].length != 4) {
             throw new MyArraySizeException("Размер массива должен быть 4x4");
